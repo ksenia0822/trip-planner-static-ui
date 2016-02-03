@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content=""> -->
+
+    <title>Trip Planner</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="/stylesheets/tripplanner.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  	<div>
+  		<h2>Hotels</h2>
+  		<select class="form-control">
+  			{% for hotel in all_hotels %}
+  				<option>{{hotel.name}}</option>			
+  			{% endfor %}
+  		</select>
+  	</div>
+
+  	<div>
+  		<h2>Restaurants</h2>
+  		<select class="form-control">
+  			{% for restaurant in all_restaurants %}
+  				<option>{{restaurant.name}}</option>			
+  			{% endfor %}
+  		</select>
+  	</div>
+
+  	<div>
+  		<h2>Activities</h2>
+  		<select class="form-control">
+  			{% for activities in all_activities %}
+  				<option>{{activities.name}}</option>			
+  			{% endfor %}
+  		</select>
+  	</div>
+
+  </body>
+ </html>
