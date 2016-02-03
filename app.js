@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 
 // serve static files 
+app.use(express.static(__dirname + '/bower_components'))
 app.use(express.static(__dirname + '/public'))
 
 

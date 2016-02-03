@@ -1,0 +1,22 @@
+{
+  "name": "trip-planner-static-ui",
+  "description": "this is a cool trip planner app",
+  "main": "app.js",
+  "authors": [
+    "ayana@fullstackacademy.com"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zhengshizhao/trip-planner-static-ui-with-ksenia",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.0"
+  }
+}
