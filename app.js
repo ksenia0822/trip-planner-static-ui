@@ -2,6 +2,8 @@ var express = require('express');
 var morgan = require('morgan'); 
 var bodyParser = require('body-parser'); 
 var swig = require('swig'); 
+var sassMiddleware = require('node-sass-middleware');
+
 
 var app = express();
 
@@ -14,12 +16,16 @@ app.engine('html', swig.renderFile);
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(sassMiddleware({
+    src: __dirname + '/assets',
+    dest: __dirname + '/public',
+    debug: true
+}));
 
 
 // statically serve front end dependencies (bootstrap & jquery)
-
-
 // serve static files 
+app.use(express.static(__dirname + '/bower_components'))
 app.use(express.static(__dirname + '/public'))
 
 
