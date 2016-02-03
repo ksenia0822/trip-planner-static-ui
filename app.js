@@ -20,11 +20,9 @@ app.use(sassMiddleware({
     src: __dirname + '/assets',
     dest: __dirname + '/public',
     debug: true
-    //outputStyle: 'compressed'
-    //prefix:  '/prefix'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/> 
 }));
 
-console.log("__dirname is", __dirname)
+
 // statically serve front end dependencies (bootstrap & jquery)
 // serve static files 
 app.use(express.static(__dirname + '/bower_components'))

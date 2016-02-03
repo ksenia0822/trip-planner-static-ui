@@ -1,2 +1,26 @@
 body {
-  background-color: red; }
+  background-color: grey; }
+
+.navbar {
+  background-color: black;
+  height: 50px;
+  position: fixed; }
+  .navbar li a {
+    font-color: white;
+    float: right; }
+  .navbar .navbar-brand {
+    float: left; }
+
+/*.navbar-inverse .navbar-nav &gt; li &gt; a, .navbar-inverse .navbar-brand {
+    color: black;
+}*/
+#map-canvas {
+  width: 1000px;
+  height: 1000px;
+  float: left; }
+
+.search {
+  margin-top: 65px;
+  background-color: pink;
+  width: 30%;
+  float: right; }

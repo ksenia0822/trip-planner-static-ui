@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-    <meta charset="utf-8">
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content=""> -->
+{% extends "layout.html" %}
 
-    <title>Trip Planner</title>
-
-    <!-- Bootstrap core CSS -->
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-    <link href="/bootstrap/dist/css/bootstrap.min.css" rel = "stylesheet">
-     <link href="/bootstrap/dist/js/bootstrap.min.js" rel = "javascript">
-      <link href="/jquery/dist/jquery.min.js" rel = "javascript">
-    <link href="/stylesheets/tripplanner.css" rel="stylesheet">
-
-
-  </head>
-
-  <body>
+{% block content %}
   	<div>
   		<h2>Hotels</h2>
   		<select class="form-control">
@@ -45,6 +27,6 @@
   			{% endfor %}
   		</select>
   	</div>
+{% endblock %}
 
-  </body>
- </html>
+
