@@ -37,50 +37,69 @@
   </nav>
 
 
-<div class = "containter">
+<div class = "containter-fluid">
   <div class = 'row'>
-    <div class="map col-lg-8" id="map-canvas">
-    
+    <div class="map col-lg-8">
+    <div id="map-canvas">
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7K_-4WIrJefzhocdqF63T0H_OQ1BrSW8&sensor=true"></script>
       <script type="text/javascript" src="/js/map.js"></script>
+    </div> <!-- div id map-->
     </div>
   <!--</div>  !row-->
 
  
       <!--<div class = 'row'> -->
-         <div class='search col-lg-4'>
+         <div class='search box col-lg-4 col-md-6 col-sm-12 cd-xs-12'>
           {% block content %}{% endblock %}
         </div>
       <!--</div> -->
 
+      <div class="days-buttons col-lg-4 col-md-6 col-sm-12 cd-xs-12">
+        <h2>Day 1</h2>
+        <ul>
+          <li class='btn btn-default' role='button'>1</li>
+          <li class='btn btn-default' role='button'>2</li>
+          <li class='btn btn-default' role='button'>3</li>
+          <li class='btn btn-default' role='button'>+</li>
+        </ul>
+      </div>
 
-
-    <div class='itinerary col-lg-4'>
+    <div class='itinerary col-lg-4 col-md-6 col-sm-12 cd-xs-12'>
       <div>
       <h2>Hotels</h2>
-      <select class="myhotel">
+      <!-- <select class="myhotel"> -->
         <ul>
-          <li>hotel</li>
+          <li>Placeholder for hotel
+            <div class='btn btn-default' role='button'>X</div>
+          </li>
+
         </ul>
-      </select>
+      
+      <!-- </select> -->
     </div>
 
     <div>
       <h2>Restaurants</h2>
-      <select class="myrestaurant ">
+      <!-- <select class="myrestaurant "> -->
         <ul>
-          <li>restaurant</li>
+          <li>Placeholder for restaurant
+            <div class='btn btn-default' role='button'>X</div>
+          </li>
         </ul>
-      </select>
+        
+      <!-- </select> -->
     </div>
 
     <div>
       <h2>Activities</h2>
-      <select class="mtactivity">
+      <!-- <select class="mtactivity"> -->
         <ul>
-          <li>activity</li>
+          <li>Placeholder for activity
+            <div class='btn btn-default' role='button'>X</div>
+          </li>
         </ul>
-      </select>
+        
+      <!-- </select> -->
     </div>
 
       <!-- {% block content %}{% endblock %} -->

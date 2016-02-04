@@ -3,11 +3,13 @@
 {% block content %}
   	<div>
   		<h2>Hotels</h2>
+
   		<select class="form-control">
   			{% for hotel in all_hotels %}
   				<option>{{hotel.name}}</option>			
   			{% endfor %}
   		</select>
+      <div class='btn btn-default' role='button'> Add </div>
   	</div>
 
   	<div>
@@ -17,6 +19,7 @@
   				<option>{{restaurant.name}}</option>			
   			{% endfor %}
   		</select>
+      <div class='btn btn-default' role='button'> Add </div>
   	</div>
 
   	<div>
@@ -26,6 +29,7 @@
   				<option>{{activities.name}}</option>			
   			{% endfor %}
   		</select>
+      <div class='btn btn-default' role='button'> Add </div>
   	</div>
 {% endblock %}
 
