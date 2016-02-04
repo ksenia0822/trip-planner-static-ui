@@ -36,16 +36,57 @@
     </div> <!-- container -->
   </nav>
 
-  <div class="container map" id="map-canvas">
+
+<div class = "containter">
+  <div class = 'row'>
+    <div class="map col-lg-8" id="map-canvas">
     
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7K_-4WIrJefzhocdqF63T0H_OQ1BrSW8&sensor=true"></script>
-    <script type="text/javascript" src="/js/map.js"></script>
-  </div>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7K_-4WIrJefzhocdqF63T0H_OQ1BrSW8&sensor=true"></script>
+      <script type="text/javascript" src="/js/map.js"></script>
+    </div>
+  <!--</div>  !row-->
 
-  <div class='search'>
-    {% block content %}{% endblock %}
-  </div>
+ 
+      <!--<div class = 'row'> -->
+         <div class='search col-lg-4'>
+          {% block content %}{% endblock %}
+        </div>
+      <!--</div> -->
 
+
+
+    <div class='itinerary col-lg-4'>
+      <div>
+      <h2>Hotels</h2>
+      <select class="myhotel">
+        <ul>
+          <li>hotel</li>
+        </ul>
+      </select>
+    </div>
+
+    <div>
+      <h2>Restaurants</h2>
+      <select class="myrestaurant ">
+        <ul>
+          <li>restaurant</li>
+        </ul>
+      </select>
+    </div>
+
+    <div>
+      <h2>Activities</h2>
+      <select class="mtactivity">
+        <ul>
+          <li>activity</li>
+        </ul>
+      </select>
+    </div>
+
+      <!-- {% block content %}{% endblock %} -->
+    </div>
+ </div> <!--row-->
+</div> <!-- container-->
   </body>
  </html>
 

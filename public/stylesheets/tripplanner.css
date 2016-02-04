@@ -1,6 +1,8 @@
-body {
-  background-color: grey; }
-
+/*body {
+	background-color: white;
+	opacity: 0.1;
+}
+*/
 .navbar {
   background-color: black;
   height: 50px;
@@ -15,12 +17,17 @@ body {
     color: black;
 }*/
 #map-canvas {
-  width: 1000px;
-  height: 1000px;
+  width: 150vh;
+  height: 100vh;
   float: left; }
 
 .search {
   margin-top: 65px;
   background-color: pink;
+  width: 30%;
+  float: right; }
+
+.itinerary {
+  background-color: green;
   width: 30%;
   float: right; }
