@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content=""> -->
+
+    <title>Trip Planner</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel = "stylesheet">
+    <script src="/jquery/dist/jquery.min.js" rel = "javascript"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js" rel = "javascript"></script>
+
+    <link href="/stylesheets/tripplanner.css" rel="stylesheet">
+    
+
+
+  </head>
+
+  <body>
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Trip Planner</a>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </nav>
+
+
+<div class = "containter-fluid">
+  <div class = 'row'>
+    <div class="map col-lg-8 col-md-6 col-sm-12 cd-xs-12">
+    <div id="map-canvas">
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7K_-4WIrJefzhocdqF63T0H_OQ1BrSW8&sensor=true"></script>
+      <script type="text/javascript" src="/js/map.js"></script>
+    </div> <!-- div id map-->
+    </div>
+  <!--</div>  !row-->
+
+ 
+      <!--<div class = 'row'> -->
+         <div class='search box col-lg-4 col-md-6 col-sm-12 cd-xs-12'>
+          {% block content %}{% endblock %}
+        </div>
+      <!--</div> -->
+
+      <div class="days-buttons col-lg-4 col-md-6 col-sm-12 cd-xs-12">
+        <h2>Day 1</h2>
+        <ul>
+          <li class='btn btn-default' role='button'>1</li>
+          <li class='btn btn-default' role='button'>2</li>
+          <li class='btn btn-default' role='button'>3</li>
+          <li class='btn btn-default' role='button'>+</li>
+        </ul>
+      </div>
+
+    <div class='itinerary col-lg-4 col-md-6 col-sm-12 cd-xs-12'>
+      <div>
+      <h2>Hotels</h2>
+      <!-- <select class="myhotel"> -->
+        <ul>
+          <li>Placeholder for hotel
+            <div class='btn btn-default' role='button'>X</div>
+          </li>
+
+        </ul>
+      
+      <!-- </select> -->
+    </div>
+
+    <div>
+      <h2>Restaurants</h2>
+      <!-- <select class="myrestaurant "> -->
+        <ul>
+          <li>Placeholder for restaurant
+            <div class='btn btn-default' role='button'>X</div>
+          </li>
+        </ul>
+        
+      <!-- </select> -->
+    </div>
+
+    <div>
+      <h2>Activities</h2>
+      <!-- <select class="mtactivity"> -->
+        <ul>
+          <li>Placeholder for activity
+            <div class='btn btn-default' role='button'>X</div>
+          </li>
+        </ul>
+        
+      <!-- </select> -->
+    </div>
+ 
+      <!-- {% block content %}{% endblock %} -->
+    </div>
+ </div> <!--row-->
+</div> <!-- container-->
+  </body>
+ </html>
+
+
